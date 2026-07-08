@@ -1,17 +1,15 @@
-import { FaCode, FaLaptopCode, FaLayerGroup, FaUsers } from "react-icons/fa";
-
 const navLinks = [
   {
-    name: "Work",
+    name: "Proyek",
     link: "#work",
   },
   {
-    name: "Experience",
+    name: "Pengalaman",
     link: "#experience",
   },
   {
-    name: "Speaking",
-    link: "#community",
+    name: "Sertifikat",
+    link: "#certifications",
   },
 ];
 
@@ -78,59 +76,37 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/dev.webp",
-    title: "Ships production AI, not demos",
-    desc: "RAG pipelines, AI agents, and n8n automation running in production at Romega — plus Beacon, an AI research agent I built and shipped end-to-end.",
+    title: "Pengiriman Produksi, Bukan Demo",
+    desc: "Merancang dan membangun aplikasi web responsif serta platform pembelajaran (KajianQu) — pengiriman end-to-end dari ide hingga rilis dengan integrasi database, autentikasi, dan fitur pembelajaran yang intuitif.",
   },
   {
     imgPath: "/images/seo.webp",
-    title: "Validated & visible",
-    desc: "5 awards, a first speakership at Qwen Meetup (Alibaba Cloud PH), and an active builder across the PH AI community — OpenAI, AWS, Google, Vercel.",
+    title: "Tervalidasi & Terlihat",
+    desc: "Meraih Medali Emas OHSN (Islamic Education & Islamic History) serta aktif di organisasi sekolah — konsisten membangun proyek nyata dan mengembangkan skill secara berkelanjutan.",
   },
   {
     imgPath: "/images/devices.webp",
-    title: "Full-stack range",
-    desc: "Web, mobile, and automation — I own the whole path from idea to deployed product with React, Next.js, Flutter, and cloud.",
+    title: "Jangkauan Pengembangan Web",
+    desc: "Pengembangan web modern: Next.js, React, Laravel, dan Node.js — dengan API terstruktur, workflow berbasis Git, serta pengalaman membangun sistem yang rapi dari kebutuhan awal hingga deployment.",
   },
 ];
 
-const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.webp",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.webp",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.webp",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
-  },
-];
-
+// Tech stack icons for 3D display
 const techStackIcons = [
   {
-    name: "Full-stack Developer",
+    name: "Front-End Developer",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Cross-Platform Developer",
+    name: "Front-End Developer",
     modelPath: "/models/Flutter.glb",
     scale: 26,
     rotation: [0, 0, 0],
   },
   {
-    name: "AI/ML Practitioner",
+    name: "AI/LLM Basics",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
@@ -142,15 +118,13 @@ const techStackIcons = [
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Git Version Control",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
 ];
 
-//use strong action words, optimized, achieved, developed, then bring tangible metrics and achievable result(eg improved front pacing app perfoamce, load spped)
-// Use strong action words, optimized, achieved, developed, then bring tangible metrics and achievable result (e.g. improved front pacing app performance, load speed)
 const expCards = [
   {
     review:
@@ -243,78 +217,20 @@ const expLogos = [
     imgPath: "/images/logo4.webp",
   },
 ];
-const testimonials = [
-  {
-    name: "Mark Siazon",
-    mentions: "msiazon.k12043276@umak.edu.ph ",
-    review:
-      "Ken showed real grit during our early web dev days. He always explored new tools beyond what was taught, and made sure we understood what we were building. His curiosity is contagious.",
-    imgPath: "/images/client1.webp",
-  },
-  {
-    name: "Timothy Forte",
-    mentions: "tforte.a62241031@umak.edu.ph ",
-    review:
-      "When we transitioned to Flutter, Ken was the one who led the charge. He learned the framework fast and even taught us the basics. It’s rare to have a teammate that dedicated.",
-    imgPath: "/images/client2.webp",
-  },
-  {
-    name: "Jam Villarosa",
-    mentions: "jvillarosa.a12240987@umak.edu.ph",
-    review:
-      "Ken’s progress in React is seriously impressive. He doesn’t just learn tools—he builds things. He’s the kind of teammate who levels up the whole group by sharing what he knows.",
-    imgPath: "/images/client3.webp",
-  },
-  {
-    name: "Lanz Corpuz",
-    mentions: "lcorpuz.a12241569@umak.edu.ph ",
-    review:
-      "Ken naturally took the lead in most of our projects. Even under pressure, he kept the team organized and focused. He made sure everyone had a role and felt valued.",
-    imgPath: "/images/client4.webp",
-  },
-  {
-    name: "Brian Ashley Papa",
-    mentions: "bpapa.a12034938@umak.edu.ph ",
-    review:
-      "You can tell Ken isn’t in this just to pass subjects—he’s here to grow. His willingness to explore new tech and take feedback makes him stand out as a leader.",
-    imgPath: "/images/client5.webp",
-  },
-  {
-    name: "Mars Maguddayao",
-    mentions: "lmaguddayao.a12240891@umak.edu.ph",
-    review:
-      "Ken is detail-oriented and driven. Whether it’s frontend polish or code clarity, he’ll always push for better. His calm leadership made our collabs smoother and more productive.",
-    imgPath: "/images/client6.webp",
-  },
-];
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.webp",
-    url: "https://www.instagram.com/sinpayken/",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.webp",
-    url: "https://www.facebook.com/kenpatrickgarcia123/",
-  },
-  {
-    name: "dev",
-    imgPath: "/images/dev.webp",
-    url: "https://dev.to/kpg782",
-  },
-  {
     name: "github",
     imgPath: "/images/github1.webp",
-    url: "https://github.com/KpG782",
+    url: "https://github.com/Akramm-22",
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.webp",
-    url: "https://www.linkedin.com/in/ken-patrick-garcia-ba5430285/",
+    url: "https://www.linkedin.com/in/akram-mujjaman-raton-6103453ba/",
   },
 ];
+
 
 export {
   words,
@@ -323,9 +239,7 @@ export {
   counterItems,
   expCards,
   expLogos,
-  testimonials,
   socialImgs,
   techStackIcons,
-  techStackImgs,
   navLinks,
 };

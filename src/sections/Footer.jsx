@@ -6,13 +6,9 @@ const Footer = () => {
         <footer className={"footer"}>
             <div className={"footer-container"}>
                 <div className={"flex flex-col justify-center items-center md:items-start md:gap-10 gap-5"}>
-                    <a
-                        href={"https://medium.com/@kenpatrickgarcia/about"}
-                        target={"_blank"}
-                        rel={"noopener noreferrer"}
-                    >
-                        Visit my Blog
-                    </a>
+                    <span className="text-sm md:text-base" style={{ color: "var(--text-tertiary)" }}>
+                        Front-End Developer · Tangerang, Indonesia
+                    </span>
                 </div>
                     <div className={"socials"}>
                         {socialImgs.map((img)=>(
@@ -32,7 +28,7 @@ const Footer = () => {
 
                 <div className={"flex flex-col justify-center"}>
                     <p className={"text-center md:text-end"}>
-                    ©️ {new Date().getFullYear()} Ken | Garcia. All Rights Reserved.
+                        ©️ {new Date().getFullYear()} Akram Mujjaman Raton. All Rights Reserved.
                     </p>
                 </div>
             </div>

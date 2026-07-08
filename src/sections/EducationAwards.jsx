@@ -20,7 +20,7 @@ const EducationAwards = () => (
       <SectionHeader
         eyebrow="// credentials"
         title="Education & Awards"
-        description="Where I studied, and the competitions and research that recognized the work."
+        description="Pendidikan dan penghargaan yang mendukung perjalanan pengembangan saya."
       />
 
       <div className="mt-12 md:mt-16 grid lg:grid-cols-2 gap-10 lg:gap-16">
@@ -50,7 +50,7 @@ const EducationAwards = () => (
 
         {/* Awards */}
         <RevealOnScroll delay={0.1}>
-          <ColumnLabel>Awards &amp; Honors</ColumnLabel>
+          <ColumnLabel>Awards & Certifications</ColumnLabel>
           <ul className="space-y-4">
             {awards.map((a) => (
               <li key={a.id} className="gradient-frame p-5">
@@ -60,12 +60,6 @@ const EducationAwards = () => (
                 </div>
                 <p className="mt-3 font-medium text-theme-primary">{a.event}</p>
                 {a.detail && <p className="mono-meta mt-1">{a.detail}</p>}
-                <a
-                  href="#work"
-                  className="mt-2 inline-block text-sm text-theme-tertiary hover:text-theme-primary transition-colors focus-ring-brand rounded"
-                >
-                  Project: <span className="text-theme-secondary">{a.project}</span> →
-                </a>
               </li>
             ))}
           </ul>

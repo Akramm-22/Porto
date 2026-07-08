@@ -300,13 +300,13 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                   </p>
                 </div>
                 <div className="bg-white/5 backdrop-blur-sm border border-gray-700 rounded-lg p-3 sm:p-4 hover:bg-white/10 transition-colors">
-                  <p className="text-gray-400 text-xs mb-1">Duration</p>
+                  <p className="text-gray-400 text-xs mb-1">Durasi</p>
                   <p className="text-sm sm:text-base font-semibold text-white">
                     {project.duration}
                   </p>
                 </div>
                 <div className="bg-white/5 backdrop-blur-sm border border-gray-700 rounded-lg p-3 sm:p-4 hover:bg-white/10 transition-colors col-span-2">
-                  <p className="text-gray-400 text-xs mb-1">Team</p>
+                  <p className="text-gray-400 text-xs mb-1">Tim</p>
                   <p className="text-sm sm:text-base font-semibold text-white truncate">
                     {project.members.join(", ")}
                   </p>
@@ -317,7 +317,7 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                 <div className="space-y-4">
                   <div>
                     <h3 className="text-lg font-semibold mb-3 text-white">
-                      Description
+                      Deskripsi
                     </h3>
                     <p className="text-gray-300 text-sm leading-relaxed">
                       {project.desc}
@@ -326,8 +326,8 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
                 </div>
 
                 <div>
-                  <h3 className="text-lg font-semibold mb-3 text-white">
-                    Key Features
+                    <h3 className="text-lg font-semibold mb-3 text-white">
+                    Fitur Utama
                   </h3>
                   <ul className="space-y-2">
                     {project.features.map((feature, idx) => (
@@ -344,8 +344,8 @@ const ProjectModal = ({ project, isOpen, onClose }) => {
               </div>
 
               <div>
-                <h3 className="text-lg font-semibold mb-3 text-white">
-                  Tech Stack
+                  <h3 className="text-lg font-semibold mb-3 text-white">
+                  Teknologi (Tech Stack)
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {project.techStack.map((tech, idx) => (
@@ -460,9 +460,9 @@ const ShowcaseSection = () => {
         variants={sectionVariants}
       >
         <motion.div className="max-w-7xl mx-auto py-2 relative z-10" variants={sectionVariants}>
-          <TitleHeader
-            title={"Selected Work"}
-            sub={"Production AI & award-winning builds"}
+            <TitleHeader
+            title={"Pekerjaan Pilihan"}
+            sub={"Proyek yang sudah saya buat"}
           />
 
           <motion.div
@@ -488,10 +488,10 @@ const ShowcaseSection = () => {
             <div className="text-center py-16 sm:py-20">
               <div className="text-6xl mb-4">🚀</div>
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
-                Coming Soon
+                Segera Hadir
               </h3>
               <p className="text-gray-400">
-                New projects in this category are currently in development
+                Proyek baru di kategori ini sedang dalam pengembangan
               </p>
             </div>
           )}

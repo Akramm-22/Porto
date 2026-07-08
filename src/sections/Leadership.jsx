@@ -10,10 +10,11 @@ const Leadership = () => (
   >
     <div className="max-w-6xl mx-auto">
       <SectionHeader
-        eyebrow="// community"
-        title="Leadership & Community"
-        description="Where I organize, mentor, and give back beyond shipping code."
+        eyebrow="// organization"
+        title="Organisasi & Pembelajaran"
+        description="Fokus pada peningkatan skill melalui proyek, kolaborasi, dan pengembangan diri yang berkelanjutan."
       />
+
 
       <div className="mt-12 md:mt-16 grid-3-cols">
         {leadership.map((l, i) => (

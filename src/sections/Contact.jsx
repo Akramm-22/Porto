@@ -30,14 +30,13 @@ const Contact = () => {
     if (isModalOpen) {
       const timer = setTimeout(() => {
         setIsModalOpen(false);
-      }, 1000); // ⏳ auto-close after 1 seconds
-      return () => clearTimeout(timer); // clean up
+      }, 1000);
+      return () => clearTimeout(timer);
     }
   }, [isModalOpen]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //Handle form submission
 
     setLoading(true);
 
@@ -49,7 +48,7 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
       setFormData({ name: "", email: "", message: "" });
-      setIsModalOpen(true); // ✅ Show modal
+      setIsModalOpen(true);
     } catch (error) {
       console.error("Email send failed:", error);
     } finally {
@@ -61,22 +60,21 @@ const Contact = () => {
     <section className={"section-padding flex-center"}>
       <div className={"w-full h-full md:px-10 px-5"}>
         <TitleHeader
-          title={"Get In Touch With Me"}
-          sub={"Contact Information"}
+          title={"Hubungi Saya"}
+          sub={"Informasi Kontak"}
         />
 
         <p
           className="mt-6 max-w-3xl mx-auto text-center text-sm md:text-base leading-7"
           style={{ color: "var(--text-secondary)" }}
         >
-          Available for AI engineering, full-stack product development, React
-          frontend work, Flutter mobile apps, and performance-focused project
-          builds for freelance, contract, and full-time opportunities.
+          Tersedia untuk peluang Front-End Development, pengembangan web dengan Laravel, React, Next.js, 
+          dan proyek berbasis JavaScript untuk pekerjaan lepas, kontrak, dan full-time.
         </p>
 
         <div className={"mt-16 grid-12-cols"}>
           {/*left side contact form*/}
-          <div className={"xl:col-span-5 border-2 border-solid-red"}>
+          <div className={"xl:col-span-5"}>
             <div className={"flex-center card-border rounded-xl p-10"}>
               <form
                 className={"w-full flex flex-col gap-7"}
@@ -150,7 +148,6 @@ const Contact = () => {
         </div>
       </div>
 
-      {/*for mpop up*/}
       <AnimatePresence>
         {isModalOpen && (
           <div 

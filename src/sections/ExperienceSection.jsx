@@ -6,20 +6,13 @@ import { experiences } from "../constants/resume.js";
 import SectionHeader from "../components/ui/SectionHeader.jsx";
 import TagList from "../components/ui/Chip.jsx";
 import { StatusBadge } from "../components/ui/Badge.jsx";
-import { SiN8N, SiFlutter, SiKotlin, SiReact, SiSocketdotio } from "react-icons/si";
-import { FaRobot, FaMicrochip, FaHeadset, FaCode } from "react-icons/fa";
+import { FaUsers, FaHeadset, FaCode } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
 // Role-matched icon per experience node (keyed by exp.icon in resume.js).
 const EXP_ICONS = {
-  robot: FaRobot,
-  socket: SiSocketdotio,
-  n8n: SiN8N,
-  kotlin: SiKotlin,
-  react: SiReact,
-  microchip: FaMicrochip,
-  flutter: SiFlutter,
+  users: FaUsers,
   headset: FaHeadset,
   code: FaCode,
 };
@@ -87,7 +80,7 @@ const ExperienceSection = () => {
         <SectionHeader
           eyebrow="// my track"
           title="Experience"
-          description="Six roles across AI, full-stack, real-time systems, and field operations — most recent first."
+          description="Four roles across organizational leadership, public relations, and community service — most recent first."
         />
 
         <div ref={rootRef} className="relative mt-12 md:mt-16 max-w-4xl mx-auto">
@@ -107,7 +100,7 @@ const ExperienceSection = () => {
           <ul className="space-y-8 md:space-y-12">
             {experiences.map((exp) => (
               <li key={exp.id} className="exp-item relative pl-14 md:pl-20">
-                {/* node with company logo */}
+                {/* node with icon */}
                 <span
                   aria-hidden="true"
                   className="glass-surface absolute left-0 top-4 grid place-items-center size-10 md:size-12 rounded-full"
