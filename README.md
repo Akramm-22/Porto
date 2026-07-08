@@ -25,9 +25,6 @@ npm run dev
 
 **Akram Mujjaman Raton**
 
-- GitHub: https://github.com/Akramm-22
-- LinkedIn: https://www.linkedin.com/in/your-linkedin/
-- Email: your-email@example.com
 
 ## 📄 License
 
